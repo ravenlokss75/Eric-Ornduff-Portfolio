@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Ornduff</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b41e626a2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/car-logo.PNG" class="logo">  <!-- add link for logo image--> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>  
+            </nav>
+            <div class="header-text">
+                <p>Auto Body Painter</p>
+                <h1>Hi, I'm <span>Eric</span> <br> out of North Carolina</h1>
+            </div>
+        </div>
+    </div>
+<!------------About------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/eric.JPEG"><!-- add photo of eric-->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, itaque. Laborum, assumenda? Ullam repellendus beatae quibusdam veniam asperiores corporis unde consectetur facilis reiciendis sequi architecto doloremque, dicta sit delectus labore!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"><!--skills-->
+                        <ul>
+                            <li><span>Automotive Painting</span></li>
+                            <li><span>Vehicle Preperation</span></li>
+                            <li><span>Excellent Body Repair Skills</span></li>
+                            <li><span>Sanding</span></li>
+                            <li><span>Cavity Filling</span></li>
+                            <li><span>Rust Removal</span></li>
+                            <li><span>Vehicle Shuttling</span></li>
+                            <li><span>Mixing Paint Acording to Specifications</span></li>
+                            <li><span>Hazardous Waste</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experiance"><!--experiance-->
+                        <ul>
+                            <li><span>Cars</span> <br> All Makes and Models</li>
+                            <li><span>Sports Cars</span> <br> All Makes and Models</li>
+                            <li><span>Trucks</span> <br> All Makes and Models</li>
+                            <li><span>SUVs</span> <br> All Makes and Models</li>
+                            <li><span>RVs</span> <br> All Makes and Models</li>
+                            <li><span>Simis</span> <br> All Makes and Models</li>
+                            <li><span>Motercycles</span> <br> All Makes and Models</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education"><!--education-->
+                        <ul>
+                            <li><span>Dale Earnhart Chevrolet</span> <br> North Carolina</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------Services----------------->
+
+    <div id="services">
+        <div id="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Automotive Painter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum fugit, doloremque maiores suscipit sit, voluptas voluptatem qui dicta amet facere voluptatibus! Nemo magni non vitae quo ipsum sapiente provident?</p><!--change-->
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-car"></i>
+                    <h2>Cavity Filling</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum fugit, doloremque maiores suscipit sit, voluptas voluptatem qui dicta amet facere voluptatibus! Nemo magni non vitae quo ipsum sapiente provident?</p><!--change-->
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-rust"></i>
+                    <h2>Rust Removal</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum fugit, doloremque maiores suscipit sit, voluptas voluptatem qui dicta amet facere voluptatibus! Nemo magni non vitae quo ipsum sapiente provident?</p><!--change-->
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-wrench"></i>
+                    <h2>Body Repair</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum fugit, doloremque maiores suscipit sit, voluptas voluptatem qui dicta amet facere voluptatibus! Nemo magni non vitae quo ipsum sapiente provident?</p><!--change-->
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------Portfolio---------------------->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <img src=""><!--add image-->
+            </div>
+            <div class="work-list">
+                <img src=""><!--add image-->
+            </div>
+            <div class="work-list">
+                <img src=""><!--add image-->
+            </div>
+            <div class="work-list">
+                <img src=""><!--add image-->
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
