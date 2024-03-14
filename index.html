@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Ornduff</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
     <script src="https://kit.fontawesome.com/b41e626a2b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -123,7 +124,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./images/red.jpg">
+                    <img src="../images2/red.jpg">
                     <div class="layer">
                         <h3>Full Restore</h3>
                         <p>Fully Restore your Vehicle to it's formare glory or, change the color it's your choice. </p>
@@ -131,7 +132,7 @@
                     </div>
             </div>
                 <div class="work">
-                    <img src="./images/rust1.jpg">
+                    <img src="./images2/rust1.jpg">
                     <div class="layer">
                         <h3>Rebuild</h3>
                         <p>Taking your old Vehicle and making it stand out again. Using old or new parts to make it new again. </p>
@@ -139,7 +140,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./images/white1.jpg">
+                    <img src="./images2/white1.jpg">
                     <div class="layer">
                         <h3>Add Big or Small Touches</h3>
                         <p>Add as many big or small touches to custom your Vehicle to your needs or specifications. </p>
@@ -147,7 +148,7 @@
                     </div>
                 </div>  
         </div>
-        <a class="btn" href=".">See More Photos</a>
+        <a class="btn" href="seemore.html">See More Photos</a>
     </div>
 <!-- ----------Contact---------------- -->
 <div id="contact">
@@ -234,6 +235,15 @@
     })
   </script>
   
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="jquery.flipster.min.js"></script>
+
+        <script>
+            $('.carousel').flipster({
+                style:'carousel',
+                spacing: -0.10,
+            });
+        </script>
 
 </body>
 </html>
