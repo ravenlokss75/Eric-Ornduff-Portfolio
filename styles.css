@@ -490,7 +490,7 @@ nav .fa-solid {
     overflow: visible;
 }
 
-.carousel img {
+.carousel, .img2 {
     -webkit-box-reflect: below 20px linear-gradient(rgb(255,255,255,0.1),rgb(255,255,255,0.3));
 }
 
